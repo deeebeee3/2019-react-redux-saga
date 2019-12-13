@@ -9,7 +9,7 @@ function* handleImagesLoadSaga() {
 
 //worker saga
 function* handleDang() {
-  yield console.log('fetching images from unsplash');
+  yield console.log('Dang!!!');
 }
 
 //watcher saga
