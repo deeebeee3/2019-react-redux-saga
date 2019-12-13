@@ -14,10 +14,10 @@ function* handleDang() {
 
 //watcher saga
 function* rootSaga() {
-  yield take(IMAGES.LOAD);
-  yield call(handleImagesLoadSaga);
   yield take('DANG');
   yield call(handleDang);
+  yield take(IMAGES.LOAD);
+  yield call(handleImagesLoadSaga);
 };
 
 //watcher saga -> actions -> worker saga
