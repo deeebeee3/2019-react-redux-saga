@@ -9,7 +9,7 @@ const setImages = (images) => ({
   images
 });
 
-const setError = () => ({
+const setError = (error) => ({
   type: IMAGES.LOAD_FAIL,
   error
 });
